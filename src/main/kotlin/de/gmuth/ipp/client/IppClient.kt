@@ -39,7 +39,7 @@ open class IppClient(val config: IppConfig = IppConfig()) {
     var onExceptionSaveMessages: Boolean = false
     var throwWhenNotSuccessful: Boolean = true
     var disconnectAfterHttpPost: Boolean = false
-    var defaultPrinterUri: URI? = URI.create("ipp://ippbin.net:12345")
+    var defaultPrinterUri: URI? = null
     var onExchangeOverrideRequestPrinterOrJobUri: URI? = null // Useful for reverse proxies or NAT
     var onExchangeLogRequestAndResponseWithLevel: Level = FINEST
 
